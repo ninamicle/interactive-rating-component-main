@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![<img width="611" alt="desktopRating" src="https://user-images.githubusercontent.com/47386569/169702956-a2d9c50e-cd74-444e-a9e3-34ff95e80d08.png">
+](Desktop rating)
 
 ### Links
 
