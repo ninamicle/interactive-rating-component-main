@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:([https://your-live-site-url.com](https://thunderous-paletas-004c61.netlify.app/))
+- Live Site URL:https://thunderous-paletas-004c61.netlify.app/
 
 ### Built with
 
