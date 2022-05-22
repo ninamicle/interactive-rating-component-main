@@ -1,0 +1,166 @@
+$primary-color: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$medium-grey-custom: hsl(216, 15%, 22%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+$font-size: 1.5rem; //15px;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  height: 95hv;
+  color: $white;
+  background-color: $very-dark-blue;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    width: 300px;
+    background-color: $dark-blue;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    &__star-img {
+      border-radius: 50%;
+      background-color: $medium-grey-custom;
+      padding: 1rem;
+    }
+    &__img {
+      display: flex;
+      justify-content: center;
+    }
+    &__content-heading {
+      color: $white;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    &__content-paragraph {
+      color: $light-grey;
+      font-size: $font-size;
+    }
+    .form:nth-child(1) input {
+      margin-right: 1.5rem;
+    }
+    .form {
+      display: flex;
+      margin: 3rem 0 2rem 0;
+      gap: 2rem;
+
+      &__input {
+        position: relative;
+      }
+      input[type="radio"]:checked + label {
+        background-color: $medium-grey;
+        color: $white;
+      }
+
+      &__label {
+        position: absolute;
+        top: -15px;
+        left: -5px;
+        background-color: $medium-grey-custom;
+        color: $light-grey;
+        border-radius: 50%;
+        padding: 0.8rem 1.3rem;
+        span {
+          font-size: 1.4rem;
+          padding: 0.3rem;
+        }
+      }
+      &__label:hover {
+        background-color: $primary-color;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
+    &__content-tanks {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      padding: 2rem 0;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    &__content-result {
+      background-color: $medium-grey-custom;
+      color: $primary-color;
+      border-radius: 2rem;
+      padding: 0.8rem;
+    }
+
+    .btn {
+      &__submit {
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+        color: $white;
+        border-radius: 10rem;
+        background-color: $primary-color;
+        border-style: none;
+        padding: 1rem;
+      }
+      &__submit:hover {
+        background-color: $white;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .container {
+    .card {
+      padding: 4rem;
+      gap: 2rem;
+      width: 40rem;
+      .btn {
+        &__submit {
+          font-size: $font-size;
+        }
+      }
+      .form {
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+.hide-container {
+  display: none;
+}
+.attribution {
+  position: absolute;
+  padding: 4rem;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}

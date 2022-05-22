@@ -1,0 +1,14 @@
+{
+  "name": "ratig-component",
+  "version": "1.0.0",
+  "description": "This is an interactive rating component.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css --watch"
+  },
+  "author": "@ninamicle",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
